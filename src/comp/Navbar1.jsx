@@ -15,7 +15,7 @@ export default function Navbar1(){
         <Navbar
   fluid={true}
  
-  className="bg-zinc-800 mb-4 border-2 border-zinc-700 "
+  className="bg-zinc-800 mb-2 border-2 border-zinc-700 "
  >
  
   <Navbar.Brand
@@ -34,22 +34,23 @@ export default function Navbar1(){
   </Navbar.Brand>
   <Navbar.Toggle />
   <Navbar.Collapse>
-    
+   
   <Link to="/" className=" font-light text-base font-sans  text-white hover:text-green-600  ">
       Home
       </Link>
-   <Link to="/wishlist" className="font-light text-base font-sans  text-white hover:text-green-600  ">
+   {/* <Link to="/wishlist" className="font-light text-base font-sans  text-white hover:text-green-600  ">
       Wishlist
-      </Link>
+    </Link>*/}
       <Link to="/shoppingcart" className="font-light text-base font-sans  text-white hover:text-green-600">
       Shopping Cart
       </Link>
-      <Link to="/checkout" className="font-light text-base font-sans text-white  hover:text-green-600 ">
+     {/* <Link to="/checkout" className="font-light text-base font-sans text-white  hover:text-green-600 ">
       Checkout
-      </Link>
+    </Link> */}
     <Navbar.Link href="/navbars" className="font-light text-base font-sans  text-white hover:text-green-600 mr-60">
       Track My Order
     </Navbar.Link>
+   
    
    {
    isAuthenticated ? (

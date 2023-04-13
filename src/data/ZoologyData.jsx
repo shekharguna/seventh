@@ -36,7 +36,7 @@ const ZoologyData = {
         img: img4,
         title: "Zoologist In Progress",
         desc: "T-Shirt",
-        price: 456,
+        price: 499,
         quantity: 1
       },
       {
@@ -44,7 +44,7 @@ const ZoologyData = {
         img: img5,
         title: "Zoologist In Progress",
         desc: "Hoodie",
-        price: 456,
+        price: 599,
         quantity: 1
       },
       {
@@ -52,7 +52,7 @@ const ZoologyData = {
         img: img6,
         title: "Zoologist In Progress",
         desc: "Phone Case",
-        price: 456,
+        price: 249,
         quantity: 1
       },
   ],
