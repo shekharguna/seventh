@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import Image32 from "../assets/description.png"
 import  Image33 from "../assets/eatsleepcode4.png"
-
-const First = () => {
-
-
-
-
+import { CartProvider, useCart } from "react-use-cart";
+    import data from "../data/data";
+const First = (props) => {
     
+ 
+      const { addItem } = useCart();
 
     const [amount, setAmount] = useState(1);
 
@@ -35,7 +34,13 @@ const First = () => {
                         <span className='py-4 px-6 rounded-lg'>{amount}</span>
                         <button className='bg-gray-200 py-2 px-4 rounded-lg text-green-600 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
                     </div>
-                    <button className='bg-green-600 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
+                    <button
+                  name="Add to cart"
+                  class="bg-gray-300 hover:bg-green-600 text-gray-700 hover:text-white font-light text-base py-2 ml-0 mt-2 px-4 w-1/2  rounded-full"
+                  onClick={() => addItem(props.item)}
+                >
+                  Add to Cart
+                </button>
                 </div>
             </div>
            
@@ -67,6 +72,7 @@ const First = () => {
         <hr class="h-px my-8 bg-zinc-900 border-1 dark:bg-zinc-900"></hr>
         </div>
     )
+    
 }
 
 

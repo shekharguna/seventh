@@ -22,6 +22,9 @@ import History from './page/HistroryProducts'
 import English from './page/EnglishProducts'
 import First from './bcaprodpages/first'
 import MusicProduct from './page/MusicProduct'
+import TshirtProduct from './page/tshirtproduct'
+import CaseProduct from './page/phonecaseproduct'
+import HoodieProduct from './page/hoodieproduct'
 import { CartProvider, useCart } from "react-use-cart";
 
 
@@ -68,6 +71,12 @@ function App() {
     <Route path="/history" element={<CartProvider><History/></CartProvider>}></Route>
 
     <Route path="/english" element={<CartProvider><English/></CartProvider>}></Route>
+
+    <Route path="/tshirtprod" element={<CartProvider><TshirtProduct/></CartProvider>}></Route>
+
+    <Route path="/caseprod" element={<CartProvider><CaseProduct/></CartProvider>}></Route>
+
+    <Route path="/hoodieprod" element={<CartProvider><HoodieProduct/></CartProvider>}></Route>
 
     <Route path="/first" element={<First/>}></Route>
    </Routes>
