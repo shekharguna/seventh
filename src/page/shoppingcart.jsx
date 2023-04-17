@@ -21,7 +21,7 @@ function Cart() {
 
       <div class="h-flex bg-gray-100 pt-flex">
 
-        <h1 class=" py-5 text-center text-2xl font-bold">Cart Items ({totalItems})</h1>
+        <h1 class=" py-5 text-center text-2xl font-bold text-green-600">Cart Items: {totalItems}</h1>
 
         <div class="mx-auto max-w-5xl flex justify-center px-6 md:flex md:space-x-6 xl:px-0">
 

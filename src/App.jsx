@@ -9,12 +9,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './page/home'
 
 import Cart from './page/shoppingcart'
-import Checkout from './page/checkout'
+
 import Search from './comp/searchbar'
 import Bcaproduct from './page/bcaproduct'
 import Footer1 from './comp/Footer'
 import Philosophy from './page/PhiloProduct'
-import About from './page/aboutus'
+
 import Zoology from './page/ZoologyProduct'
 import Psychology from './page/PsyProduct'
 import Chemistry from './page/ChemistryProduct'
@@ -50,7 +50,7 @@ function App() {
     <Route path="/shoppingcart" element={<CartProvider><Cart/></CartProvider>}></Route>
 
     
-    <Route path="/checkout" element={<Checkout/>}></Route>
+    
 
     <Route path="/bcaproduct" element={<CartProvider>
       <Bcaproduct/>
