@@ -48,9 +48,9 @@ export default function Navbar1(){
      {/* <Link to="/checkout" className="font-light text-base font-sans text-white  hover:text-green-600 ">
       Checkout
     </Link> */}
-    <Navbar.Link href="/navbars" className="font-light text-lg font-sans  text-white hover:text-green-600 mr-60">
+    <Link to="/about1" className="font-light text-lg font-sans  text-white hover:text-green-600 mr-60">
       About
-    </Navbar.Link>
+    </Link>
 
     {
 isAuthenticated && <p> {user.name} </p>
