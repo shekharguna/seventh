@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import './App.css'
 import Navbar1 from './comp/Navbar1'
-import Carousel1 from './comp/Carousel'
-import Card1 from './comp/Card'
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Home from './page/home'
@@ -20,7 +19,7 @@ import Psychology from './page/PsyProduct'
 import Chemistry from './page/ChemistryProduct'
 import History from './page/HistroryProducts'
 import English from './page/EnglishProducts'
-import First from './bcaprodpages/first'
+
 import MusicProduct from './page/MusicProduct'
 import TshirtProduct from './page/tshirtproduct'
 import CaseProduct from './page/phonecaseproduct'
@@ -79,7 +78,7 @@ function App() {
 
     <Route path="/hoodieprod" element={<CartProvider><HoodieProduct/></CartProvider>}></Route>
 
-    <Route path="/first" element={<First/>}></Route>
+   
 
     <Route path="/about1" element={<About1/>}></Route>
    </Routes>

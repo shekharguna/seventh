@@ -4,6 +4,7 @@ import { useAuth0 } from "@auth0/auth0-react"
 import image12 from "../assets/logosample.png"
 import Image22 from "../assets/search.png"
 import Image23 from "../assets/customer.png"
+import Image40 from "../assets/logo1.png"
 
 
 export default function Navbar1(){
@@ -24,10 +25,10 @@ export default function Navbar1(){
   >
 
    
-  
+  <img src="src\assets\logo1.png" className="h-16"></img>
 
    <span className="self-center whitespace-nowrap text-3xl font-algerian text-white">
-      EduStyle
+   
     </span>
     
     
@@ -35,37 +36,34 @@ export default function Navbar1(){
   <Navbar.Toggle />
   <Navbar.Collapse>
    
-   <div className="flex gap-14 pr-14">
-  <Link to="/" className=" font-light text-lg font-sans  text-white hover:text-green-600  ">
+   <div className="flex gap-14">
+  <Link to="/" className=" font-semibold text-2xl font-sans  text-white hover:text-green-600  ">
       Home
       </Link>
    {/* <Link to="/wishlist" className="font-light text-base font-sans  text-white hover:text-green-600  ">
       Wishlist
     </Link>*/}
-      <Link to="/shoppingcart" className="font-light text-lg font-sans  text-white hover:text-green-600">
+      <Link to="/shoppingcart" className="font-semibold text-2xl font-sans  text-white hover:text-green-600">
       Shopping Cart
       </Link>
      {/* <Link to="/checkout" className="font-light text-base font-sans text-white  hover:text-green-600 ">
       Checkout
     </Link> */}
-    <Link to="/about1" className="font-light text-lg font-sans  text-white hover:text-green-600 mr-60">
+    <Link to="/about1" className="font-semibold text-2xl font-sans  text-white hover:text-green-600 mr-60">
       About
     </Link>
 
-    {
-isAuthenticated && <p> {user.name} </p>
-    }
-   
+ 
     </div>
 
   
    {
    isAuthenticated ? (
-    <button className="hover:text-green-600 text-white font-light text-lg font-sans" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+    <button className="hover:text-green-600 text-white font-semibold text-2xl font-sans" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
     Log Out
   </button>
    ) : (
-    <button className="hover:text-green-600 text-white font-light text-lg font-sans" onClick={() => loginWithRedirect()}>Log In</button>
+    <button className="hover:text-green-600 text-white font-semibold text-2xl font-sans" onClick={() => loginWithRedirect()}>Log In</button>
    )
    
    }
